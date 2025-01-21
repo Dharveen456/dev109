@@ -1,0 +1,23 @@
+			body {
+				font-family: Helvetica, Arial, sans-serif;
+				color: #665544;
+				padding: 15%, 15%;}
+      h1 {padding: 12px;
+				line-height: 2em;
+         font-family:'DancingScriptRegular';
+         color:blue;
+         text-align: center;
+         font-size:4000%;}
+			h2, p {
+				padding: 12px;
+				line-height: 2em;}
+			a, a:hover, a:visited {
+				color: #665544;}
+      i {
+        color:darkgreen;}
+  p {
+   font-family: 'DancingScriptRegular';
+   font-weight: normal;
+   font-style: normal;
+   font-size: 200%;
+}

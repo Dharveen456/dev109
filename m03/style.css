@@ -4,7 +4,7 @@
 	padding: 15%, 15%;}
       h1 {padding: 12px;
 	line-height: 2em;
-         font-family:'DancingScriptRegular';
+         font-family: 'DancingScriptRegular';
          color:blue;
          text-align: center;
          font-size:400%;}
@@ -15,9 +15,3 @@
 	color: #665544;}
       i {
         color:darkgreen;}
-  p {
-   font-family: 'DancingScriptRegular';
-   font-weight: normal;
-   font-style: normal;
-   font-size: 200%;
-}

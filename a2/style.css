@@ -38,7 +38,7 @@ margin-right:10%;
 .white{
 border: 1px solid black;
 width: 12%; /*changed from 10 as it used to be 9 squares per row*/
-height: 72px;
+height: 60px;
 background-color:white;
 float:left;
 }
@@ -46,7 +46,7 @@ float:left;
 .black{
 border: 1px solid black;
 width: 12%; /*changed from 10 as it used to be 9 squares per row*/
-height: 72px;
+height: 60px;
 background-color:#787878;
 float:left;
 }

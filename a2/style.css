@@ -11,7 +11,7 @@ width:100%;
 background-color:#62C2CE;
 text-align:center;
 z-index:10;
-font-family: 'JustLettersMedium';
+font-family: 'Avara';
 font-weight: normal;
 font-style: normal;
 font-size:36px;
@@ -58,7 +58,18 @@ clear:both;
  
 
 #footer {
-border:solid 1px;
-padding: 10px;
-margin:10px;
+position:fixed;
+top:0px;
+left:0px;
+padding:10px;
+margin:0px;
+width:100%;
+background-color:#000000;
+color: #FFFFFF;
+text-align:center;
+z-index:10;
+font-family: 'Avara';
+font-weight: normal;
+font-style: normal;
+font-size:36px; 
 }

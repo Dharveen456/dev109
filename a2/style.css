@@ -69,5 +69,6 @@ font-family: 'AvaraBold';
 font-weight: normal;
 font-style: normal;
 font-size:18px;
- clear:both; 
+clear:both;
+float: left;
 }

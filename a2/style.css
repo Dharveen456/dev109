@@ -56,19 +56,17 @@ clear:both;
 }
 
  
-
 #footer {
-left:0px;
-padding:10px;
-margin:0px;
-width:100%;
-background-color:#000000;
-color: #FFFFFF;
-text-align:center;
-font-family: 'AvaraBold';
-font-weight: normal;
-font-style: normal;
-font-size:18px;
-clear:both;
-float: left;
+  left: 0px;
+  padding: 10px; 
+  margin: -10px; 
+  width: 100%;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'AvaraBold';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px; 
+  clear: both;
 }

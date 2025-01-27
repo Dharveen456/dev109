@@ -10,7 +10,7 @@ margin:0px;
 width:100%;
 background-color:#62C2CE;
 text-align:center;
-z-index:10;
+z-index:10; /* makes the title stay in the front */
 font-family: 'AvaraBold';
 font-weight: normal;
 font-style: normal;
@@ -19,53 +19,53 @@ font-size:36px;
 
 img {
 margin-left: 5px;
-margin-top:10px;
+margin-top:10px; /* positioning adjustments so the images appear properly in the boxes */
 }
 
 #container {
-  margin: 0 auto; /* Center the container horizontally */
+  margin: 0 auto; /* centers the container horizontally */
   margin-top: 10%;
   margin-bottom: 5%;
-  width: 80%; /* Define the width to control the chessboard's size */
+  width: 80%; /* defines chessboard size */
 }
 
 .row {
-  display: flex;
-  justify-content: center; /* Centers the chessboard */
+  display: flex; /* using a flexbox for the centering */
+  justify-content: center; /* centers the chessboard */
 }
 
 .white{
 border: 1px solid black;
-width: 12%; /*changed from 10 as it used to be 9 squares per row*/
+width: 12%; /* changed from 10 as it used to be 9 squares per row */
 height: 60px;
 background-color:white;
-float:left;
+float:left; /*default alignment */
 }
 
 .black{
 border: 1px solid black;
-width: 12%; /*changed from 10 as it used to be 9 squares per row*/
+width: 12%; /* changed from 10 as it used to be 9 squares per row */
 height: 60px;
 background-color:#787878;
-float:left;
+float:left; /*default alignment */
 }
 
 #clear{
-clear:both;
+clear:both; /* used to seperate content on a new line */
 }
 
  
 #footer {
   left: 0px;
   padding: 10px; 
-  margin: -10px; 
+  margin: -10px; /* adjusts for te blank spot that was previously visible */
   width: 100%;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #FFFFFF; /* in case text is to be added, have it contrast from the background */
   text-align: center;
   font-family: 'AvaraBold';
   font-weight: normal;
   font-style: normal;
   font-size: 18px; 
-  clear: both;
+  clear: both; /* puts the footer at the very bottom */
 }

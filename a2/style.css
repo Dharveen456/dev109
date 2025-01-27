@@ -30,8 +30,8 @@ margin-top:10px;
 }
 
 .row {
-  display: flex; /* Use flexbox to align squares within each row */
-  justify-content: center; /* Center-align squares horizontally */
+  display: flex;
+  justify-content: center; /* Centers the chessboard */
 }
 
 .white{

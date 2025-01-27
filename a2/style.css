@@ -24,7 +24,7 @@ margin-top:10px;
 
 #container {
   margin: 0 auto; /* Center the container horizontally */
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 5%;
   width: 80%; /* Define the width to control the chessboard's size */
 }

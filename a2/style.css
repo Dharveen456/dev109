@@ -10,8 +10,10 @@ body {
 }
 
 #container {
-    min-height: calc(100vh - 100px); /* Adjust based on header/footer size */
-    margin-top: 10%;
+      margin: 0 auto; /* Center the container horizontally */
+  margin-top: 20%;
+  margin-bottom: 5%;
+  width: 48%; /* Define the width to control the chessboard's size */
 }
 
 #footer {

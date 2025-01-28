@@ -8,15 +8,6 @@ body {
   width: 90%;
   margin: 0 auto;
 }
-#nav, #footer {
-  /*background-color: #efefef;*/
-  padding: 0.5em 0;
-}
-#feature, .article {
-  height: 10em;
-  margin-bottom: 1em;
-  /*background-color: #efefef;*/
-}
 #content {
   overflow: auto;
 }
@@ -32,13 +23,13 @@ color: #FFF000;
   margin: 1%;
 }
 .column1{
-  color:#FF0000
+  color:#FF0000;
 }
 .column2{
-  color:#FFFF00
+  color:#FFFF00;
 }
 .column3 {
-  color:00FF00;
+  color: #00FF00;
   margin-right: 0%;
 }
 li {
@@ -46,3 +37,12 @@ li {
   padding: 0.5em;
 }
 
+#nav, #footer {
+  background-color: #efefef;
+  padding: 0.5em 0;
+}
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
+}

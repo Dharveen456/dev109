@@ -22,13 +22,13 @@ color: #FFF000;
   margin: 1%;
 }
 .column1{
-  color:#FF0000;
+  background-color:#FF0000;
 }
 .column2{
-  color:#FFFF00;
+  background-color:#FFFF00;
 }
 .column3 {
-  color:#00FF00;
+  background-color:#00FF00;
   margin-right: 0%;
 }
 li {

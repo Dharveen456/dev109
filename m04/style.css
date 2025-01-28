@@ -36,11 +36,15 @@ li {
   padding: 0.5em;
 }
 #nav, #footer {
-  background-color: #efefef;
   padding: 0.5em 0;
+}
+#nav{
+  background-color:#0000FF;
+}
+#footer{
+  background-color:#00FFFF;
 }
 #feature, .article {
   height: 10em;
   margin-bottom: 1em;
-  background-color: #efefef;
 }

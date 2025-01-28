@@ -3,9 +3,19 @@
   color: #665544;
   text-align: center;
 }
+
 body {
   width: 90%;
   margin: 0 auto;
+}
+#nav, #footer {
+  background-color: #efefef;
+  padding: 0.5em 0;
+}
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
 }
 #content {
   overflow: auto;
@@ -35,12 +45,4 @@ li {
   display: inline;
   padding: 0.5em;
 }
-#nav, #footer {
-  background-color: #efefef;
-  padding: 0.5em 0;
-}
-#feature, .article {
-  height: 10em;
-  margin-bottom: 1em;
-  background-color: #efefef;
-}
+

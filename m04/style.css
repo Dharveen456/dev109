@@ -10,7 +10,7 @@ body {
   width: 90%;
   margin: 0 auto;
   background-image: url("https://img.freepik.com/free-photo/abstract-blurred-multi-colored-background-generative-ai_169016-30200.jpg");
-  background-witdh: 100%;
+  background-repeat:no-repeat;
 }
 #content {
   overflow: auto;
@@ -21,7 +21,7 @@ body {
 #feature{
 background-color: #FF00FF;
 background-image: url("https://www.freeiconspng.com/uploads/customers-icon-3.png");
-float:left;
+background-position:right;
 }
 .column1, .column2, .column3 {
   width: 31.3%;

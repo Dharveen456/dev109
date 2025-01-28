@@ -13,8 +13,8 @@ body {
 #nav, #feature, #footer {
   margin: 1%;
 }
-menu{
-color: #FFF000;
+#feature{
+background-color: #FF00FF;
 }
 .column1, .column2, .column3 {
   width: 31.3%;

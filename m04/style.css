@@ -13,6 +13,9 @@ body {
 #nav, #feature, #footer {
   margin: 1%;
 }
+#menu{
+color: FFF000;
+}
 .column1, .column2, .column3 {
   width: 31.3%;
   float: left;

@@ -9,13 +9,13 @@ body {
   margin: 0 auto;
 }
 #nav, #footer {
-  background-color: #efefef;
+  /*background-color: #efefef;*/
   padding: 0.5em 0;
 }
 #feature, .article {
   height: 10em;
   margin-bottom: 1em;
-  background-color: #efefef;
+  /*background-color: #efefef;*/
 }
 #content {
   overflow: auto;

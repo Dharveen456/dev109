@@ -13,15 +13,22 @@ body {
 #nav, #feature, #footer {
   margin: 1%;
 }
-#menu{
-color: FFF000;
+menu{
+color: #FFF000;
 }
 .column1, .column2, .column3 {
   width: 31.3%;
   float: left;
   margin: 1%;
 }
+.column1{
+  color:#FF0000
+}
+.column2{
+  color:#FFFF00
+}
 .column3 {
+  color:00FF00;
   margin-right: 0%;
 }
 li {

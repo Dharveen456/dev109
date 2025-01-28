@@ -9,6 +9,8 @@ h1{
 body {
   width: 90%;
   margin: 0 auto;
+  background-image: url("https://img.freepik.com/free-photo/abstract-blurred-multi-colored-background-generative-ai_169016-30200.jpg");
+  background-witdh: 100%;
 }
 #content {
   overflow: auto;

@@ -20,6 +20,8 @@ body {
 }
 #feature{
 background-color: #FF00FF;
+background-image: url("https://www.freeiconspng.com/uploads/customers-icon-3.png");
+float:left;
 }
 .column1, .column2, .column3 {
   width: 31.3%;

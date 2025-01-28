@@ -3,7 +3,6 @@
   color: #665544;
   text-align: center;
 }
-
 body {
   width: 90%;
   margin: 0 auto;
@@ -29,14 +28,13 @@ color: #FFF000;
   color:#FFFF00;
 }
 .column3 {
-  color: #00FF00;
+  color:#00FF00;
   margin-right: 0%;
 }
 li {
   display: inline;
   padding: 0.5em;
 }
-
 #nav, #footer {
   background-color: #efefef;
   padding: 0.5em 0;

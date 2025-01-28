@@ -3,6 +3,9 @@
   color: #665544;
   text-align: center;
 }
+h1{
+  font-family: 'BilboINCRegular';
+}
 body {
   width: 90%;
   margin: 0 auto;

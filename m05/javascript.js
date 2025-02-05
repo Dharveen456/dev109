@@ -11,6 +11,7 @@ if (operator === 'addition') {
   }
 } else {
   // Do multiplication
+  msg = '<h2>Multiplication</h2>';
   while (i < 11) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
     i++;

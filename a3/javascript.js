@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
             for(let i=0; i<10; i++){
                 rhombtext+=symbol.value;
             }
-            rhombtext+="\n";
+            rhombtext+="<br>";
         }
        rhombus.textContent = rhombtext;
     });

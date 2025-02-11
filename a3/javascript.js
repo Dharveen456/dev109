@@ -5,6 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const submit = document.getElementById("submit");
     const rhombus = document.getElementById("rhobmus");
     submit.addEventListener("click", function(){
-       rhombus.text = "jimmy johns";                     
+       rhombus.text = "jimmy johns";
     });
 });

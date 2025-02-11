@@ -5,7 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const submit = document.getElementById("submit");
     const rhombus = document.getElementById("rhombus");
     submit.addEventListener("click", function(){
-        let txt = prompt("jimtastic");
-       rhombus.textContent = "txt";
+        let rhombtext="";
+        for(let i=0; i<10; i++){
+            for(let i=0; i<10; i++){
+                rhombtext+=symbol.value;
+            }
+            rhombtext+="\n";
+        }
+       rhombus.textContent = rhombtext;
     });
 });

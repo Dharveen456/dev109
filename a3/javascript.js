@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const color = document.getElementById("color");
+    const color1 = document.getElementById("color1");
+    const color2 = document.getElementById("color2");
     const symbol = document.getElementById("symbol");
     const height = document.getElementById("height");
     const submit = document.getElementById("submit");

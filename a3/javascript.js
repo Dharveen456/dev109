@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const height = document.getElementById("height");
     const submit = document.getElementById("submit");
     submit.addEventListener("click", function(){
-       prompt("waddup");                     
+       let blob = prompt("waddup");                     
     });
 });

@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             rhombtext+="<br>";
         }
-       rhombus.textContent = rhombtext;
+       rhombus.innerHTML = rhombtext;
     });
 });

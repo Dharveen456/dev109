@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const submit = document.getElementById("submit");
     const rhombus = document.getElementById("rhombus");
     submit.addEventListener("click", function(){
+        rhombus.lineheight = height.value;
         let rhombtext="";
         for(let i=0; i<10; i++){
             for(let i=0; i<10; i++){

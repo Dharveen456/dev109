@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const submit = document.getElementById("submit");
     const rhombus = document.getElementById("rhombus");
     submit.addEventListener("click", function(){
-       rhombus.textContent = "jimmy johns pizza";
+        let txt = prompt("jimtastic");
+       rhombus.textContent = "txt";
     });
 });

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let oddColor = color1.value;
         for (let i = 0; i < 10; i++) {
         let odd = true;
-            for (let k = 0; k < 10-i; j++) {
+            for (let k = 0; k < i; j++) {
                 rhombtext = `<span style="color:white">${symbol.value}</span>`;
             }
             for (let j = 0; j < 10-i; j++) {

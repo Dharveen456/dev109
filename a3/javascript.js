@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     submit.addEventListener("click", function(){
         rhombus.style.lineheight = parseInt(height.value) + "px";
         let rhombtext="";
+        let odd = false;
         let evenColor = color2.value;
         let oddColor = color1.value;
         for (let i = 0; i < 10; i++) {

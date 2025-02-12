@@ -8,15 +8,17 @@ document.addEventListener("DOMContentLoaded", function() {
     submit.addEventListener("click", function(){
         rhombus.style.lineheight = parseInt(height.value) + "px";
         let rhombtext="";
-        let odd=true;
-        span.style.color = "#FF0000";
-        p.style.color = "#00FF00";
-        for(let i=0; i<10; i++){
-            for(let j=0; j<10; j++){
+        let evenColor = color2.value;
+        let oddColor = color1.value;
+
+        for (let i = 0; i < 10; i++) {
+            for (let j = 0; j < 10; j++) {
                 odd = !odd;
-                rhombtext+= odd ? "<span>"+symbol.value+"</span>" :  symbol.value;
+                rhombtext += odd 
+                    ? `<span style="color:${oddColor}">${symbol.value}</span>` 
+                    : `<span style="color:${evenColor}">${symbol.value}</span>`;
             }
-            rhombtext+="<br>";
+            rhombtext += "<br>";
         }
        rhombus.innerHTML = rhombtext;
     });

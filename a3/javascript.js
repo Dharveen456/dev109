@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const submit = document.getElementById("submit");
     const rhombus = document.getElementById("rhombus");
     submit.addEventListener("click", function(){
-        rhombus.style.lineheight = parseInt(height.value) + "px";
+        rhombus.style.lineHeight = parseInt(height.value) + "px";
         let rhombtext="";
         let odd = false;
         let evenColor = color2.value;

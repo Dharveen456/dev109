@@ -8,11 +8,15 @@ document.addEventListener("DOMContentLoaded", function() {
     submit.addEventListener("click", function(){
         rhombus.style.lineHeight = parseInt(height.value) + "px";
         let rhombtext="";
-        let odd = false;
+        let odd = true;
         let evenColor = color2.value;
         let oddColor = color1.value;
         for (let i = 0; i < 10; i++) {
-            for (let j = 0; j < 10; j++) {
+        let odd = true;
+            for (let k = 0; k < 10-i; j++) {
+                rhombtext = `<span style="color:white">${symbol.value}</span>`;
+            }
+            for (let j = 0; j < 10-i; j++) {
                 odd = !odd;
                 rhombtext += odd 
                     ? `<span style="color:${oddColor}">${symbol.value}</span>` 

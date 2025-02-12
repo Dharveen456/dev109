@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
     submit.addEventListener("click", function(){
         rhombus.style.lineheight = parseInt(height.value) + "px";
         let rhombtext="";
+        let odd=true;
         for(let i=0; i<10; i++){
             for(let j=0; j<10; j++){
-                rhombtext+=symbol.value;
+                odd = !odd;
+                rhombtext+= odd ? "<span id='odd'>"+symbol.value+"</span>" :  symbol.value;
             }
             rhombtext+="<br>";
         }

@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let rhombtext="";
         let evenColor = color2.value;
         let oddColor = color1.value;
-        for (let i = 0; i < 10; i++) {
         let odd = true;
+        for (let i = 0; i < 10; i++) {
             for (let k = 0; k < 10-i; k++) {
                 rhombtext += `<span style="color:white">${symbol.value}</span>`;
             }
@@ -22,6 +22,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     : `<span style="color:${evenColor}">${symbol.value}</span>`;
             }
             for (let k = 0; k < 10-i; k++) {
+                rhombtext += `<span style="color:white">${symbol.value}</span>`;
+            }
+            rhombtext += "<br>";
+        }
+        for (let i = 0; i < 10; i++) {
+            for (let k = 0; k < i; k++) {
+                rhombtext += `<span style="color:white">${symbol.value}</span>`;
+            }
+            for (let j = 0; j < 2*(10-i); j++) {
+                odd = !odd;
+                rhombtext += odd 
+                    ? `<span style="color:${oddColor}">${symbol.value}</span>` 
+                    : `<span style="color:${evenColor}">${symbol.value}</span>`;
+            }
+            for (let k = 0; k < i; k++) {
                 rhombtext += `<span style="color:white">${symbol.value}</span>`;
             }
             rhombtext += "<br>";

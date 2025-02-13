@@ -15,11 +15,14 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let k = 0; k < 10-i; k++) {
                 rhombtext += `<span style="color:white">${symbol.value}</span>`;
             }
-            for (let j = 0; j < i; j++) {
+            for (let j = 0; j < 2*i; j++) {
                 odd = !odd;
                 rhombtext += odd 
                     ? `<span style="color:${oddColor}">${symbol.value}</span>` 
                     : `<span style="color:${evenColor}">${symbol.value}</span>`;
+            }
+            for (let k = 0; k < 10-i; k++) {
+                rhombtext += `<span style="color:white">${symbol.value}</span>`;
             }
             rhombtext += "<br>";
         }

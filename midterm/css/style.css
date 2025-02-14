@@ -18,5 +18,5 @@ body{
   font-family: 'BolshevikRegular';
   background-image: url("https://tse4.mm.bing.net/th/id/OIP.nLIHqSoJ7wwB4FhCqaovkwHaEK?rs=1&pid=ImgDetMain");
   background-repeat: no-repeat;
-  background-width: 100%;
+  background-size: cover;
 }

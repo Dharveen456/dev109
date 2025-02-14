@@ -6,13 +6,13 @@
 #navbar a {
   color: white;
   text-decoration: none;
-  padding: 14px 20px;
   display: block;
   text-align: center;
 }
-.navbar a:hover {
+#navbar a:hover {
   background-color: #FFEEEE;
 }
 body{
   background-image: url("https://tse4.mm.bing.net/th/id/OIP.nLIHqSoJ7wwB4FhCqaovkwHaEK?rs=1&pid=ImgDetMain");
+  background-repeat: no-repeat;
 }

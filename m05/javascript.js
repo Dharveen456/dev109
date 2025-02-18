@@ -3,7 +3,7 @@ var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '';              // Message
   // Do multiplication
-  msg = '<h2>Multiplication</h2>'
+  msg = '<h2>Multiplication</h2>';
   if(table!===number){
     table=0;
   }

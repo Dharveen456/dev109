@@ -4,7 +4,7 @@ var i = 1;                 // Set counter to 1
 var msg = '';              // Message
   // Do multiplication
   msg = '<h2>Multiplication</h2>';
-  if(table!===number){
+  if(isNaN(Number(table)){
     table=0;
   }
   while (i < 11) {

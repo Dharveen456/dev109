@@ -3,11 +3,13 @@ var operator = 'multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '';              // Message
   // Do multiplication
-  msg = '<h2>Multiplication</h2>';
+  msg = '<h2>Multiplication</h2
+  if(table!===number){
+    table=0;
+  }
   while (i < 11) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
     i++;
-//  }
 }
 // Write the message into the page
 var el = document.getElementById('blackboard');

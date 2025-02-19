@@ -25,4 +25,12 @@ div {
     vertical-align: top;
     width: 40%;
     margin: 5%;
+    flex: 1;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
 }

@@ -24,5 +24,5 @@ div {
     display: inline-block; /* Makes divs sit next to each other */
     vertical-align: top;  /* Aligns them at the top */
     width: 40%; /* Adjust width to fit side by side */
-    margin: 10%; /* Adds some spacing */
+    margin: 5%; /* Adds some spacing */
 }

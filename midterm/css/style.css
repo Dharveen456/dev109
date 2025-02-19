@@ -21,6 +21,9 @@ body{
   color:white;
 }
 div {
+
+}
+.container div{
     display: inline-block;
     vertical-align: top;
     width: 40%;

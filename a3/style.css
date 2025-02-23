@@ -1,3 +1,5 @@
 body{
   line-height:14px;
+  white-space: nowrap;
+  overflow: auto;
 }

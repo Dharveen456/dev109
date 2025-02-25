@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Find the position where the new element should be added.
     var position = document.getElementsByTagName('ul')[0];
-
+    
     // Insert the new element into its position.
     position.appendChild(newEl);
     input.value="";
-  }
-}))
+  });
+});

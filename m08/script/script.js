@@ -16,5 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Insert the new element into its position.
     position.appendChild(newEl);
+    input.value="";
   }
 }))

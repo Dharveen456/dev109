@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const button = document.getElementsByTagName("button")[0];
   const input = document.getElementsByTagName("input")[0];
-  button.addEventListener("click", function(){
+  function addItem(){
     // Create a new element and store it in a variable.
     var newEl = document.createElement('li');
 
@@ -18,4 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     position.appendChild(newEl);
     input.value="";
   });
+button.addEventListener("click", addItem());
+input.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      addItem();
+    }
 });

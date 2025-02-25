@@ -17,10 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Insert the new element into its position.
     position.appendChild(newEl);
     input.value="";
-  });
-button.addEventListener("click", addItem());
-input.addEventListener("keydown", function(event) {
+  }
+  button.addEventListener("click", addItem());
+  input.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       addItem();
     }
+  });
 });

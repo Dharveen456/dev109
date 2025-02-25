@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const button = document.getElementByTag("button")[0];
-  const input = document.getElementByTag("input")[0];
+  const button = document.getElementsByTagName("button")[0];
+  const input = document.getElementsByTagName("input")[0];
   button.addEventListener("click", function(){
     // Create a new element and store it in a variable.
     var newEl = document.createElement('li');
@@ -17,4 +17,4 @@ document.addEventListener("DOMContentLoaded", function() {
     // Insert the new element into its position.
     position.appendChild(newEl);
   }
-}
+}))

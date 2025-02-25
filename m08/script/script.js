@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
     position.appendChild(newEl);
     input.value="";
   });
-button.addEventListener("click", addItem);
+button.addEventListener("click", addItem());
 input.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
       addItem();

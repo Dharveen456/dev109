@@ -1,5 +1,5 @@
 const button = document.getElementByTag("button")[0];
-button.addEventListener("click", function(){
+/*button.addEventListener("click", function(){
   // Create a new element and store it in a variable.
   var newEl = document.createElement('li');
 
@@ -14,4 +14,4 @@ button.addEventListener("click", function(){
 
   // Insert the new element into its position.
   position.appendChild(newEl);
-}
+}*/

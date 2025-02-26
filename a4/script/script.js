@@ -1,37 +1,39 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const submit = document.getElementById("submit");
-  const firstname = document.getElementById("firstname");
-  const lastname = document.getElementById("lastname");
-  const email = document.getElementById("email");
-  const phonenumber = document.getElementById("phonenumber");
-  const username = document.getElementById("username");
-  const password = document.getElementById("password");
-  const address = document.getElementById("address");
-  const city = document.getElementById("city");
-  const state = document.getElementById("state");
-  const country = document.getElementById("country");
-  const zipcode = document.getElementById("zipcode");
-  const comments = document.getElementById("comments");
-  const errormessage = document.getElementById("errormessage");
-  submit.addEventListener("click", function(event) {
-    event.preventDefault();
-    let errorMessages = "";
-
-    errorMessages += (firstname.value === "" || firstname.value.length > 20) ? "The firstname is required and cannot be greater than 20 characters<br>" : "";
-    errorMessages += (!/^[A-Za-z]+$/.test(firstname.value)) ? "The firstname must only include alphabetic characters<br>" : "";
-    errorMessages += (lastname.value === "" || lastname.value.length > 20) ? "The lastname is required and cannot be greater than 20 characters<br>" : "";
-    errorMessages += (!/^[A-Za-z]+$/.test(lastname.value)) ? "The lastname must only include alphabetic characters<br>" : "";
-    
-    let atpos = email.value.indexOf("@"), dotpos = email.value.lastIndexOf(".");
-    errorMessages += (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.value.length) ? "Invalid email<br>" : "";
-    errorMessages += (isNaN(phonenumber.value) || phonenumber.value.length > 15 || phonenumber.value === "") ? "Invalid phone number<br>" : "";
-    errorMessages += (username.value === "" || username.value.length > 12) ? "The username is required and cannot be greater than 12 characters<br>" : "";
-    errorMessages += (password.value === "" || password.value.length < 7) ? "The password is required and must be at least 7 characters<br>" : "";
-    errorMessages += (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).+$/.test(password.value)) ? "The password should have at least one uppercase, one lowercase, one number, and one special character<br>" : "";
-    errorMessages += (address.value === "") ? "Address is required<br>" : "";
-    errorMessages += (city.value === "") ? "City is required<br>" : "";
-    errorMessages += (country.value === "USA" && (zipcode.value === "" || zipcode.value.length > 5)) ? "Zipcode is required for those in the United States and cannot be more than 5 digits<br>" : "";
-
-    errorMessages ? errormessage.innerHTML = errorMessages : alert("Form submitted successfully!");
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("submit").addEventListener("click", function (event) {
+    if (!validateForm()) event.preventDefault();
   });
 });
+
+function validateForm() {
+  let errorMessages = "";
+  const firstname = document.getElementById("firstname").value.trim();
+  const lastname = document.getElementById("lastname").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phonenumber = document.getElementById("phonenumber").value.trim();
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value;
+  const address = document.getElementById("address").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const country = document.getElementById("country").value;
+  const zipcode = document.getElementById("zipcode").value.trim();
+  const errormessage = document.getElementById("errormessage");
+
+  errorMessages += (firstname === "" || firstname.length > 20) ? "First name is required and cannot exceed 20 characters.<br>" : "";
+  errorMessages += (!/^[A-Za-z]+$/.test(firstname)) ? "First name must contain only alphabetic characters.<br>" : "";
+  errorMessages += (lastname === "" || lastname.length > 20) ? "Last name is required and cannot exceed 20 characters.<br>" : "";
+  errorMessages += (!/^[A-Za-z]+$/.test(lastname)) ? "Last name must contain only alphabetic characters.<br>" : "";
+
+  const atpos = email.indexOf("@"), dotpos = email.lastIndexOf(".");
+  errorMessages += (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) ? "Invalid email format.<br>" : "";
+  errorMessages += (isNaN(phonenumber) || phonenumber.length > 15 || phonenumber === "") ? "Invalid phone number.<br>" : "";
+  errorMessages += (username === "" || username.length > 12) ? "Username is required and cannot exceed 12 characters.<br>" : "";
+  errorMessages += (password === "" || password.length < 7) ? "Password is required and must be at least 7 characters.<br>" : "";
+  errorMessages += (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).+$/.test(password)) ? "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.<br>" : "";
+  errorMessages += (address === "") ? "Address is required.<br>" : "";
+  errorMessages += (city === "") ? "City is required.<br>" : "";
+  errorMessages += (country === "USA" && (zipcode === "" || zipcode.length > 5)) ? "Zipcode is required for those in the USA and cannot exceed 5 digits.<br>" : "";
+
+  errormessage.innerHTML = errorMessages;
+
+  return errorMessages === ""; // ✅ If no errors, form submits
+}

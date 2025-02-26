@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const zipcode = document.getElementById("zipcode");
   const comments = document.getElementById("comments");
   const errormessage = document.getElementById("errormessage");
-  submit.addEventListener("click", function() {
+  submit.addEventListener("click", function(event) {
     event.preventDefault();
     let errorMessages = "";
 

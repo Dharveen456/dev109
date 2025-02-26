@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const comments = document.getElementById("comments");
   const errormessage = document.getElementById("errormessage");
   submit.addEventListener("click", function() {
+    event.preventDefault();
     let errorMessages = "";
 
     errorMessages += (firstname.value === "" || firstname.value.length > 20) ? "The firstname is required and cannot be greater than 20 characters<br>" : "";

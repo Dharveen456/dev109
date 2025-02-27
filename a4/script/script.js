@@ -49,8 +49,8 @@ function validateForm() {
   }
   
   const password = document.getElementById("password").value;
-  if (password === "" || password.length < 7) {
-    document.getElementById("passworderror").innerHTML = "Password is required and must be at least 7 characters.";
+  if (password === "" || password.length > 7) {
+    document.getElementById("passworderror").innerHTML = "Password is required and must be less than 8 characters.";
     valid = false;
   }
   if (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).+$/.test(password)) {

@@ -1,95 +1,75 @@
-<form action="thankyou.html" onsubmit="return validateForm();">
-  <label>First Name</label>
-  <input id="firstname" type="text">
-  <br>
-  <label>Last Name</label>
-  <input id="lastname" type="text">
-  <br>
-  <label>Email</label>
-  <input id="email" type="email">
-  <br>
-  <label>Phone Number</label>
-  <input id="phonenumber" type="tel">
-  <br>
-  <label>Username</label>
-  <input id="username" type="text">
-  <br>
-  <label>Password</label>
-  <input id="password" type="password">
-  <br>
-  <label>Address</label>
-  <input id="address" type="text">
-  <br>
-  <label>City</label>
-  <input id="city" type="text">
-  <br>
-  <label>State</label>
-  <select name="State" id="state">
-  <option value="AL">Alabama</option>
-	<option value="AK">Alaska</option>
-	<option value="AZ">Arizona</option>
-	<option value="AR">Arkansas</option>
-	<option value="CA">California</option>
-	<option value="CO">Colorado</option>
-	<option value="CT">Connecticut</option>
-	<option value="DE">Delaware</option>
-	<option value="DC">District Of Columbia</option>
-	<option value="FL">Florida</option>
-	<option value="GA">Georgia</option>
-	<option value="HI">Hawaii</option>
-	<option value="ID">Idaho</option>
-	<option value="IL">Illinois</option>
-	<option value="IN">Indiana</option>
-	<option value="IA">Iowa</option>
-	<option value="KS">Kansas</option>
-	<option value="KY">Kentucky</option>
-	<option value="LA">Louisiana</option>
-	<option value="ME">Maine</option>
-	<option value="MD">Maryland</option>
-	<option value="MA">Massachusetts</option>
-	<option value="MI">Michigan</option>
-	<option value="MN">Minnesota</option>
-	<option value="MS">Mississippi</option>
-	<option value="MO">Missouri</option>
-	<option value="MT">Montana</option>
-	<option value="NE">Nebraska</option>
-	<option value="NV">Nevada</option>
-	<option value="NH">New Hampshire</option>
-	<option value="NJ">New Jersey</option>
-	<option value="NM">New Mexico</option>
-	<option value="NY">New York</option>
-	<option value="NC">North Carolina</option>
-	<option value="ND">North Dakota</option>
-	<option value="OH">Ohio</option>
-	<option value="OK">Oklahoma</option>
-	<option value="OR">Oregon</option>
-	<option value="PA">Pennsylvania</option>
-	<option value="RI">Rhode Island</option>
-	<option value="SC">South Carolina</option>
-	<option value="SD">South Dakota</option>
-	<option value="TN">Tennessee</option>
-	<option value="TX">Texas</option>
-	<option value="UT">Utah</option>
-	<option value="VT">Vermont</option>
-	<option value="VA">Virginia</option>
-	<option value="WA">Washington</option>
-	<option value="WV">West Virginia</option>
-	<option value="WI">Wisconsin</option>
-	<option value="WY">Wyoming</option>
-  </select>
-  <br>
-  <label>Country</label>
-  <select name="Country" id="country">
-    <option value="USA">USA</option>
-  </select>
-  <br>
-  <label>Zipcode</label>
-  <input id="zipcode" type="text">
-  <br>
-  <label>Comments</label>
-  <input id="comments" type="text">
-  <button id="submit" type="submit">Submit</button>
-</form>
-<div id="errormessage"></div>
-<script src="script/script.js"></script>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="thankyou.html" onsubmit="return validateForm();">
+        <label>First Name</label>
+        <input id="firstname" type="text">
+        <div class="errormessage" id="firstnameerror"></div>
+        
+        <label>Last Name</label>
+        <input id="lastname" type="text">
+        <div class="errormessage" id="lastnameerror"></div>
+        
+        <label>Email</label>
+        <input id="email" type="email">
+        <div class="errormessage" id="emailerror"></div>
+        
+        <label>Phone Number</label>
+        <input id="phonenumber" type="tel">
+        <div class="errormessage" id="phonenumbererror"></div>
+        
+        <label>Username</label>
+        <input id="username" type="text">
+        <div class="errormessage" id="usernameerror"></div>
+        
+        <label>Password</label>
+        <input id="password" type="password">
+        <div class="errormessage" id="passworderror"></div>
+        
+        <label>Address</label>
+        <input id="address" type="text">
+        <div class="errormessage" id="addresserror"></div>
+        
+        <label>City</label>
+        <input id="city" type="text">
+        <div class="errormessage" id="cityerror"></div>
+        
+        <label>State</label>
+        <select name="State" id="state">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+        </select>
+        <div class="errormessage" id="stateerror"></div>
+        
+        <label>Country</label>
+        <select name="Country" id="country">
+            <option value="USA">USA</option>
+        </select>
+        <div class="errormessage" id="countryerror"></div>
+        
+        <label>Zipcode</label>
+        <input id="zipcode" type="text">
+        <div class="errormessage" id="zipcodeerror"></div>
+
+        <label>Comments</label>
+        <input id="comments" type="text">
+        <div class="errormessage" id="commentserror"></div>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    <script src="script/script.js"></script>
+</body>
+</html>

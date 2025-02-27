@@ -27,7 +27,7 @@ function validateForm() {
   errorMessages += (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) ? "Invalid email format.<br>" : "";
   errorMessages += (isNaN(phonenumber) || phonenumber.length > 15 || phonenumber === "") ? "Invalid phone number.<br>" : "";
   errorMessages += (username === "" || username.length > 12) ? "Username is required and cannot exceed 12 characters.<br>" : "";
-  errorMessages += (password === "" || password.length < 7) ? "Password is required and must be at least 7 characters.<br>" : "";
+  errorMessages += (password === "" || password.length > 7) ? "Password is required and must be at at most 7 characters.<br>" : "";
   errorMessages += (!/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).+$/.test(password)) ? "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.<br>" : "";
   errorMessages += (address === "") ? "Address is required.<br>" : "";
   errorMessages += (city === "") ? "City is required.<br>" : "";

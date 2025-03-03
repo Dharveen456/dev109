@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 var  mybutton = document.querySelector("button");
 mybutton.addEventListener("click", function(event) {
 
@@ -18,3 +19,4 @@ event.stopPropagation();
     dot.style.top = (event.pageY - 4) + "px";
     document.body.appendChild(dot);
   });
+});

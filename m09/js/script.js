@@ -1,4 +1,5 @@
         document.addEventListener("DOMContentLoaded", function () {
+                var zhoop = prompt("j");
             var mybutton = document.querySelector("button");
             mybutton.addEventListener("click", function(event) {
                 var elements = document.getElementsByTagName("div");

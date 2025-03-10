@@ -9,3 +9,6 @@ body{
     display: flex;
     flex-direction: column;
 }
+#timer{
+    text-align: right;
+}

@@ -5,27 +5,39 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
     const intervalTime = 4000;
     let slideInterval;
+    let countdownInterval;
     let timeLeft = intervalTime / 1000;
+
     function startSlideshow() {
         slideInterval = setInterval(nextSlide, intervalTime);
         startCountdown();
     }
+
     function showSlide(index) {
         slides.forEach(slide => slide.style.display = "none");
         slides[index].style.display = "block";
-        alt.text = slides[index].alt;
+
+        // Fix for alt text display
+        if (alt) {
+            alt.textContent = slides[index].getAttribute("alt") || "No description available";
+        }
     }
-    document.getElementById("next").addEventListener("click", function nextSlide() {
+
+    function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;
         showSlide(currentIndex);
         resetTimer();
-    });
+    }
 
-    document.getElementById("prev").addEventListener("click", function () {
+    function prevSlide() {
         currentIndex = (currentIndex - 1 + slides.length) % slides.length;
         showSlide(currentIndex);
         resetTimer();
-    });
+    }
+
+    document.getElementById("next").addEventListener("click", nextSlide);
+    document.getElementById("prev").addEventListener("click", prevSlide);
+
     function resetTimer() {
         clearInterval(slideInterval);
         clearInterval(countdownInterval);
@@ -35,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateTimer() {
-        timerElement.textContent = timeLeft;
+        if (timerElement) {
+            timerElement.textContent = `Next slide in: ${timeLeft} seconds`;
+        }
     }
 
     function startCountdown() {

@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".slide");
     const timerElement = document.getElementById("timer");
+    const alt = document.getElementById("alt");
     let currentIndex = 0;
     const intervalTime = 4000;
     let slideInterval;
@@ -12,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSlide(index) {
         slides.forEach(slide => slide.style.display = "none");
         slides[index].style.display = "block";
+        alt.text = slides[index].alt;
     }
     document.getElementById("next").addEventListener("click", function nextSlide() {
         currentIndex = (currentIndex + 1) % slides.length;

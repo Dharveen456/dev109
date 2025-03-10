@@ -1,6 +1,4 @@
 .slide {
-    display: flex;
-    flex-direction: column;
     height: 400px;
     width:600px;
     display: none;
@@ -8,4 +6,6 @@
 body{
     justify-content:center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }

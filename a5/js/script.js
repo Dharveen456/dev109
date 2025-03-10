@@ -5,39 +5,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const intervalTime = 4000;
     let slideInterval;
     let timeLeft = intervalTime / 1000;
-    
-    function showSlide(index) {
-        slides.forEach(slide => slide.style.display = "none");
-        slides[index].style.display = "block";
-    }
-
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-        resetTimer();
-    }
-
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-        resetTimer();
-    }
-
-    document.getElementById("next").addEventListener("click", function () {
-        nextSlide();
-        resetTimer();
-    });
-
-    document.getElementById("prev").addEventListener("click", function () {
-        prevSlide();
-        resetTimer();
-    });
-
     function startSlideshow() {
         slideInterval = setInterval(nextSlide, intervalTime);
         startCountdown();
     }
+    function showSlide(index) {
+        slides.forEach(slide => slide.style.display = "none");
+        slides[index].style.display = "block";
+    }
+    document.getElementById("next").addEventListener("click", function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+        resetTimer();
+    });
 
+    document.getElementById("prev").addEventListener("click", function () {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+        resetTimer();
+    });
     function resetTimer() {
         clearInterval(slideInterval);
         clearInterval(countdownInterval);

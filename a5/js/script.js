@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function updateTimer() {
         if (timerElement) {
-            timerElement.textContent = `Next slide in: ${timeLeft} seconds`;
+            timerElement.textContent = timeLeft;
         }
     }
 

@@ -11,4 +11,5 @@ body{
 }
 #timer{
     text-align: right;
+    align-items: right;
 }

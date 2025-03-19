@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #FFEEEE;
+}
+
+body {
+  font-family: 'BolshevikRegular';
+  background-image: url("https://tse4.mm.bing.net/th/id/OIP.nLIHqSoJ7wwB4FhCqaovkwHaEK?rs=1&pid=ImgDetMain");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contained {
+  flex: 1;
+  max-width: 45%;
+}
+
+img {
+  max-width: 80%; 
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
